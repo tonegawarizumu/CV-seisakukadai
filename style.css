@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* ヘッダー */
+header {
+    height: 150px;
+    width: 100%;
+    background-color: #FF7043; /* 焼肉屋に合った暖色系 */
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px; /* ヘッダー下部に余白を追加 */
+    grid-column: span 2; /* ヘッダーはグリッドの2列をまたがる */
+}
+
+header h1 {
+    font-size: 48px; /* タイトルを大きく */
+    color: #FF5722;  /* 強調する色 */
+    font-weight: bold; /* 太字 */
+}
+
+header h1 img {
+    height: 80px;
+}
+
+header p {
+    color: #FFF;
+    font-size: 24px;   /* 文字サイズを大きく */
+    font-weight: bold; /* 太くして目立たせる */
+    margin-top: 10px;
+}
+
+/* ナビゲーションバー */
+nav {
+    background-color: #FF5722; /* ヘッダーと統一感 */
+    height: 40px;
+    margin-top: 10px;  /* ナビゲーションの上部に余白を追加 */
+    grid-column: span 2; /* ナビゲーションはグリッドの2列をまたがる */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;  /* リンク文字を白く */
+    font-weight: bold;  /* リンクを太く */
+    transition: background-color 0.3s ease; /* スムーズに色が変わる */
+}
+
+nav ul li a:hover {
+    color: #FF5722; /* ホバー時に文字色が変わる */
+    background-color: #E64A19; /* ホバー時に背景色が変わる */
+}
+
+/* コンテナ */
+.big_box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* メインコンテンツ */
+main {
+    background-color: #217113;
+    color: #FFF;
+    padding: 20px;
+}
+
+/* メイン記事 */
+main article {
+    margin-bottom: 20px;
+}
+
+main section {
+    background-color: #FFCC80; /* 暖かみのあるオレンジ系 */
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #333; /* 文字色を濃く */
+}
+
+/* サイドバー */
+.r_aside {
+    background-color: #693E95;
+    color: #FFF;
+    padding: 20px;
+}
+
+/* サイドバーの広告 */
+.r_aside img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* フッター */
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #FF7043; /* 焼肉屋に合った暖色系 */
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    grid-column: span 2;
+}
+
+/* その他調整 */
+footer p {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* コンテンツやレイアウト調整 */
+h1, h2 {
+    margin-top: 0;
+    color: #FF5722;  /* 見出しの色 */
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* リストやリンクのスタイル */
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FF5722;
+}
+
+/* サイドバーやコンテンツの詳細調整 */
+.r_aside aside {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #EAF9B5;
+}
